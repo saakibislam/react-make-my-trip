@@ -1,0 +1,63 @@
+.main-div{
+    position: relative;
+}
+.main-text {
+    position: absolute;
+    top: 150px;
+    color: #f73c2f;
+    font-weight: 700;
+    font-size: 65px;
+    width: 96.66666666666666%;
+    z-index: 2;
+    word-spacing: 10px;
+}
+.fade-in-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    color: black;
+    animation: fadeIn linear 7s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+@media only screen and (max-width:768px) {
+    .main-text{
+        top: 100px;
+        font-size: 50px;
+    }
+    
+}
+@media only screen and (max-width:425px) {
+    .main-text{
+        top: 50px;
+        font-size: 30px;
+    }
+    
+}
