@@ -20,7 +20,7 @@ import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 export default function Login() {
-    const { googleLogin } = useAuth();
+    const { googleLogin, setIsLoading } = useAuth();
     const [isLogin, setIsLogin] = useState(true);
     const location = useLocation();
     const history = useHistory();
@@ -31,6 +31,7 @@ export default function Login() {
             .then(result => {
                 history.push(redirect_uri);
             })
+            .finally(() => setIsLoading(false))
     }
     return (
         <>

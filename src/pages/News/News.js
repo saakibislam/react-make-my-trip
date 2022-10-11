@@ -13,7 +13,7 @@ const News = () => {
                                         bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
                             {/* <!-- media --> */}
                             <div className="h-64 w-auto md:w-1/2">
-                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/tourism/Cayman_Islands_-_NS_2021-410x250.jpg" alt="" />
+                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/tourism/Cayman_Islands_-_NS_2021-410x250.jpg" alt="Source Unavailable" />
                             </div>
                             {/* <!-- content --> */}
                             <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
@@ -37,7 +37,7 @@ const News = () => {
                                         bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
                             {/* <!-- media --> */}
                             <div className="h-64 w-auto md:w-1/2">
-                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/tourism/Tel_Aviv_-_Israel_-_NS_2020-410x250.jpg" alt="" />
+                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/tourism/Tel_Aviv_-_Israel_-_NS_2020-410x250.jpg" alt="Source Unavailable" />
                             </div>
                             {/* <!-- content --> */}
                             <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
@@ -59,7 +59,7 @@ const News = () => {
                                         bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
                             {/* <!-- media --> */}
                             <div className="h-64 w-auto md:w-1/2">
-                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/airline/Lufthansa_-_Covid-19_2-410x250.jpg" alt="" />
+                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/airline/Lufthansa_-_Covid-19_2-410x250.jpg" alt="Source Unavailable" />
                             </div>
                             {/* <!-- content --> */}
                             <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
@@ -81,7 +81,7 @@ const News = () => {
                                         bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
                             {/* <!-- media --> */}
                             <div className="h-64 w-auto md:w-1/2">
-                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/John_Cena_-_Abu_Dhabi_-_NS_1-410x250.jpg" alt="" />
+                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/John_Cena_-_Abu_Dhabi_-_NS_1-410x250.jpg" alt="Source Unavailable" />
                             </div>
                             {/* <!-- content --> */}
                             <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
@@ -103,7 +103,7 @@ const News = () => {
                                         bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
                             {/* <!-- media --> */}
                             <div className="h-64 w-auto md:w-1/2">
-                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/miscellaneous/Ain_Dubai_-_opening_-_NS_1-410x250.jpg" alt="" />
+                                <img className="inset-0 h-full w-full object-cover object-center" src="https://www.breakingtravelnews.com/images/sized/images/uploads/miscellaneous/Ain_Dubai_-_opening_-_NS_1-410x250.jpg" alt="Source Unavailable" />
                             </div>
                             {/* <!-- content --> */}
                             <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">

@@ -10,7 +10,7 @@ export default function OrderTable() {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myorders/${userEmail}`)
+        fetch(`https://salty-shelf-73704.herokuapp.com/myorders/${userEmail}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [userEmail, orders])
@@ -18,7 +18,7 @@ export default function OrderTable() {
 
     const handleConfirmation = orderId => {
 
-        fetch(`http://localhost:5000/confirm/${orderId}`, {
+        fetch(`https://salty-shelf-73704.herokuapp.com/confirm/${orderId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -87,7 +87,7 @@ export default function OrderTable() {
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap">
                                             {
-                                                order.status == 'Pending' ?
+                                                order.status === 'Pending' ?
                                                     <button
                                                         onClick={() => handleConfirmation(order._id)}
                                                         className="bg-gray-200 rounded-full py-3 px-6 text-indigo-600 hover:text-indigo-900 font-semibold">

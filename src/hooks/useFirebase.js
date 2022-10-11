@@ -5,11 +5,13 @@ import { useEffect, useState } from "react";
 const useFirebase = () => {
     initializeAuthentication();
     const [user, setUser] = useState();
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
     const googleLogin = () => {
+        setIsLoading(true);
         return signInWithPopup(auth, googleProvider)
     }
     useEffect(() => {
@@ -20,16 +22,21 @@ const useFirebase = () => {
             else {
                 setUser({});
             }
+            setIsLoading(false);
         })
     }, [])
     const logOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => {
                 alert("Logout Successful")
             })
+            .finally(() => setIsLoading(false))
     }
     return {
         user,
+        isLoading,
+        setIsLoading,
         googleLogin,
         logOut
     }

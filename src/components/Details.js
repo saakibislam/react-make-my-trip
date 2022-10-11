@@ -1,7 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react/cjs/react.development';
 import useAuth from '../hooks/useAuth';
 
 const Details = () => {
@@ -14,11 +13,15 @@ const Details = () => {
     const arrivalRef = useRef();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/booking/${locationId}`)
+        let isMounted = true;
+        fetch(`https://salty-shelf-73704.herokuapp.com/booking/${locationId}`)
             .then(res => res.json())
             .then(data => {
-                setPlace(data);
+                if (isMounted) {
+                    setPlace(data)
+                };
             })
+        return () => { isMounted = false };
     }, [locationId, place])
 
     const { name, origin, price, thingsToDo, includes, description, img } = place;
@@ -40,7 +43,7 @@ const Details = () => {
             departure: departureRef.current.value,
             arrival: arrivalRef.current.value
         }
-        fetch('http://localhost:5000/placeorder', {
+        fetch('https://salty-shelf-73704.herokuapp.com/placeorder', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react/cjs/react.development';
+import React, { useState, useEffect } from 'react';
 import Card from '../../components/Card';
 import banner from '../../images/banner.jpg';
 import './Home.css'
@@ -7,7 +6,7 @@ import './Home.css'
 const Home = () => {
     const [places, setPlaces] = useState();
     useEffect(() => {
-        fetch('http://localhost:5000/destinations')
+        fetch('https://salty-shelf-73704.herokuapp.com/destinations')
             .then(res => res.json())
             .then(data => setPlaces(data.slice(6, 14)))
     }, [])
